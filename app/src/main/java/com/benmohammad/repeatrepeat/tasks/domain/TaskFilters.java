@@ -16,6 +16,7 @@ public class TaskFilters {
     private static final HashMap<TasksFilterType, Predicate<Task>> FILTERS;
 
     static {
+
         FILTERS = new HashMap<>();
         FILTERS.put(TasksFilterType.ALL_TASKS, t -> true);
         FILTERS.put(TasksFilterType.ACTIVE_TASKS, t -> !t.details().completed());
