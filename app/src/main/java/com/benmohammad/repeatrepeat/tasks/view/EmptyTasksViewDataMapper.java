@@ -14,13 +14,13 @@ public class EmptyTasksViewDataMapper {
             case ACTIVE_TASKS:
                 return builder
                         .addViewVisibility(View.GONE)
-                        .title(R.string.no_tasks_completed)
+                        .title(R.string.no_tasks_active)
                         .icon(R.drawable.ic_verified)
                         .build();
             case COMPLETED_TASKS:
                 return builder
                         .addViewVisibility(View.GONE)
-                        .title(R.string.no_tasks_active)
+                        .title(R.string.no_tasks_completed)
                         .icon(R.drawable.ic_circle_check)
                         .build();
             default:

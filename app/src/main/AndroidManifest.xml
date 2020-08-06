@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".taskdetails.TaskDetailActivity"/>
+        <activity android:name=".addedittask.AddEditTaskActivity"/>
+        <activity android:name=".stats.StatisticsActivity" android:parentActivityName=".tasks.TaskActivity"/>
 
     </application>
 
