@@ -5,7 +5,7 @@ import com.google.auto.value.AutoValue;
 @AutoValue
 public abstract class TaskDetails {
 
-    //public static final TaskDetails DEFAULT;
+    public static final TaskDetails DEFAULT = TaskDetails.builder().build();
 
     public abstract String title();
     public abstract String description();
