@@ -6,7 +6,6 @@ import android.os.Bundle;
 import com.benmohammad.repeatrepeat.addedittask.domain.AddEditTaskMode;
 import com.benmohammad.repeatrepeat.addedittask.domain.AddEditTaskModel;
 import com.benmohammad.repeatrepeat.data.TaskBundlePacker;
-import com.benmohammad.repeatrepeat.data.TaskDetails;
 import com.google.common.base.Optional;
 
 import static com.benmohammad.repeatrepeat.data.TaskBundlePacker.taskDetailsFromBundle;
