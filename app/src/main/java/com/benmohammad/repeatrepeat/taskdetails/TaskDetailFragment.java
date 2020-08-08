@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -94,6 +95,16 @@ public class TaskDetailFragment extends Fragment {
     public void onPause() {
         controller.stop();
         super.onPause();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.menu_delete:
+                menuEvents.onNext(TaskDetailEvent.deleteTaskRequested());
+                return true;
+        }
+        return false;
     }
 
     @Override
